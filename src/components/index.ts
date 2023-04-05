@@ -1,2 +1,2 @@
-export * from './header'
-export * from './textComponent'
+export * from "./header";
+export * from "./textComponent";
