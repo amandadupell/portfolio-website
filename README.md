@@ -1,3 +1,3 @@
-# Amanda Dupell Porfolio
+# Amanda Dupell Portfolio
 
 here we go!
