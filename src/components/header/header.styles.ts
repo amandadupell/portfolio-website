@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SidebarNav = styled.nav`
   height: 100vh;
@@ -11,3 +12,7 @@ export const SidebarNav = styled.nav`
     left: 15px;
   }
 `;
+
+export const StyledImage = styled.img``;
+
+export const StyledLink = styled(Link)``;
