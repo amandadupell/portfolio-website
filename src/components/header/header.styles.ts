@@ -1,18 +1,39 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { $orange } from "../../assets/colors";
 
-export const SidebarNav = styled.nav`
-  height: 100vh;
+export const StyledNav = styled.nav`
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
   position: fixed;
-  top: 100px;
-  left: 100px;
-  @media screen and (max-width: 800px) {
-    top: 15px;
-    left: 15px;
+  width: 100%;
+`;
+
+export const StyledBox = styled.div`
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    color: ${$orange};
   }
 `;
 
-export const StyledImage = styled.img``;
+export const StyledImage = styled.img`
+  height: 50px;
+  width: 50px;
 
-export const StyledLink = styled(Link)``;
+  @media screen and (max-width: 800px) {
+    height: 20px;
+    width: 20px;
+  }
+`;

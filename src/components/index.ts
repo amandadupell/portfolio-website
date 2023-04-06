@@ -1,2 +1,2 @@
-export * from "./header";
-export * from "./textComponent";
+export { default as Header } from "./header";
+export { default as TextComponent } from "./textComponent";
