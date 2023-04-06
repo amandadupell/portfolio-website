@@ -26,4 +26,5 @@ export const StyledText = styled.div<StoryProps>`
       Inter,
     sans-serif;
   color: ${$black};
+  ${({ type }) => (type === TextType.PARAGRAPH ? "width: 300px" : "")}
 `;
