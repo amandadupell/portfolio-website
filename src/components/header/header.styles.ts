@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { $orange } from "../../assets/colors";
 
 export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
-  position: fixed;
   width: 100%;
 `;
 
@@ -23,9 +21,6 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     cursor: pointer;
-  }
-  &:active {
-    color: ${$orange};
   }
 `;
 
