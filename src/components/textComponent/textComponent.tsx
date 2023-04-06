@@ -16,7 +16,7 @@ const TextComponent = ({ nav, text, type, bold }: TextComponentProps) => {
         {text}
       </StyledText>
     </h1>
-  ) : type === TextType.TITLE ? (
+  ) : type === TextType.SUBHEADER ? (
     <h2>
       <StyledText nav={nav} type={type} bold={bold}>
         {text}

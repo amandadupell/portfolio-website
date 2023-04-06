@@ -1,5 +1,6 @@
 export enum TextType {
   HEADER = "HEADER",
+  SUBHEADER = "SUBHEADER",
   TITLE = "TITLE",
   SUBTITLE = "SUBTITLE",
   PARAGRAPH = "PARAGRAPH",

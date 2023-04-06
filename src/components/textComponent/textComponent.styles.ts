@@ -14,8 +14,10 @@ export const StyledText = styled.div<StyledTextProps>`
       ${({ type }) => {
         switch (type) {
           case TextType.HEADER:
-          case TextType.TITLE:
+          case TextType.SUBHEADER:
             return "700 48px/52px";
+          case TextType.TITLE:
+            return "700 26px/30px";
           case TextType.SUBTITLE:
             return "20px/24px";
           case TextType.PARAGRAPH:
@@ -34,8 +36,10 @@ export const StyledText = styled.div<StyledTextProps>`
         ${({ type }) => {
           switch (type) {
             case TextType.HEADER:
-            case TextType.TITLE:
+            case TextType.SUBHEADER:
               return "700 28px/32px";
+            case TextType.TITLE:
+              return "700 20px/24px";
             case TextType.SUBTITLE:
               return "16px/20px";
             case TextType.PARAGRAPH:

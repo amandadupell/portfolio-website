@@ -31,7 +31,7 @@ const HomePage = () => {
         <StyledArrow src={Arrow} />
       </StyledTitleBox>
       <ProjectContainer>
-        <TextComponent type={TextType.TITLE} text="projects" />
+        <TextComponent type={TextType.SUBHEADER} text="projects" />
         {projectData.map((item) => (
           <Project
             title={item.title}

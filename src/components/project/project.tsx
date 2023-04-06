@@ -26,7 +26,7 @@ const Project = ({
       <Container>
         <ProjectImage src={src} color={color} />
         <TextContainer>
-          <TextComponent bold type={TextType.SUBTITLE} text={title} />
+          <TextComponent type={TextType.TITLE} text={title} />
           <TextComponent type={TextType.PARAGRAPH} text={description} />
           <TextComponent bold type={TextType.PARAGRAPH} text={skills} />
         </TextContainer>

@@ -11,6 +11,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
+    margin-top: 50px;
   }
 `;
 
