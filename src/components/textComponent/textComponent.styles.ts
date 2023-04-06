@@ -15,11 +15,11 @@ export const StyledText = styled.div<StyledTextProps>`
         switch (type) {
           case TextType.HEADER:
           case TextType.TITLE:
-            return "700 48px/50px";
+            return "700 48px/52px";
           case TextType.SUBTITLE:
-            return "20px/22px";
+            return "20px/24px";
           case TextType.PARAGRAPH:
-            return "16px/18px";
+            return "16px/20px";
           default:
             return;
         }
@@ -27,7 +27,6 @@ export const StyledText = styled.div<StyledTextProps>`
       Inter,
     sans-serif;
   color: ${$black};
-  ${({ type }) => (type === TextType.PARAGRAPH ? "width: 300px" : "")}
   ${({ nav }) => (nav ? `&:hover { color: ${$orange} }` : "")}
 
   @media screen and (max-width: 800px) {
@@ -36,11 +35,11 @@ export const StyledText = styled.div<StyledTextProps>`
           switch (type) {
             case TextType.HEADER:
             case TextType.TITLE:
-              return "700 28px/30px";
+              return "700 28px/32px";
             case TextType.SUBTITLE:
-              return "16px/18px";
+              return "16px/20px";
             case TextType.PARAGRAPH:
-              return "10px/12px";
+              return "10px/14px";
             default:
               return;
           }
