@@ -7,11 +7,20 @@ export const StyledTitleBox = styled.div`
 
 export const ProjectContainer = styled.div`
   padding: 25px 175px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 10px 75px;
+  }
 `;
 
 export const StyledArrow = styled.img`
   margin-top: 50px;
   width: 200px;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: 25px;
+    width: 100px;
+  }
 `;
 
 export const StyledHand = styled.img`

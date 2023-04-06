@@ -8,11 +8,27 @@ export const Container = styled.div`
   &: hover {
     transform: scale(1.25, 1.25);
   }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 50px 100px;
+  padding: 50px;
+
+  @media screen and (max-width: 1400px) {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 225px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 150px;
+  }
 `;

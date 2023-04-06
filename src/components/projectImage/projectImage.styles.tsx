@@ -18,6 +18,11 @@ export const StyledCircle = styled.div<StyledProjectImageProps>`
   width: 325px;
   border-radius: 50%;
   background-color: ${({ color }) => color};
+
+  @media screen and (max-width: 1000px) {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 export const StyledImage = styled.img`
@@ -27,4 +32,9 @@ export const StyledImage = styled.img`
   height: 325px;
   width: 325px;
   object-fit: cover;
+
+  @media screen and (max-width: 1000px) {
+    height: 200px;
+    width: 200px;
+  }
 `;
