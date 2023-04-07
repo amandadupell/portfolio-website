@@ -19,6 +19,10 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   margin: 0 50px 0 0;
 
+  @media screen and (max-width: 800px) {
+    margin: 0 20px 0 0;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -30,7 +34,7 @@ export const StyledImage = styled.img`
   width: 50px;
 
   @media screen and (max-width: 800px) {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
   }
 `;
