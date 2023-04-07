@@ -1,6 +1,7 @@
-import { $madeToPlay, $letterboxd } from "../../assets/colors";
+import { $madeToPlay, $letterboxd, $oldPortfolio } from "../../assets/colors";
 import MadeToPlayImage from "../../images/home/covermockup.png";
 import LetterboxdImage from "../../images/home/home1mock.png";
+import PorfolioImage from "../../images/home/portfoliomockup.png";
 
 export const projectData = [
   {
@@ -20,5 +21,14 @@ export const projectData = [
     src: LetterboxdImage,
     color: $letterboxd,
     to: "/letterboxd",
+  },
+  {
+    title: "Personal Potfolio",
+    description:
+      "When I graduated from university, I knew I wanted my first design to development project to be my personal portfolio. The projects showcased on this portfolio are from my college design career and are not included on this portfolio. Give it a look!",
+    skills: "Web Design | Design Process | Development",
+    src: PorfolioImage,
+    color: $oldPortfolio,
+    to: "/personal-portfolio",
   },
 ];

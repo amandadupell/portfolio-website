@@ -11,6 +11,10 @@ export const ProjectContainer = styled.div`
   @media screen and (max-width: 1000px) {
     padding: 10px 75px;
   }
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 export const StyledArrow = styled.img`

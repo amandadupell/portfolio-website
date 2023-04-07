@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledPage = styled.div`
-  padding: 50px 100px;
+  padding: 50px 100px 200px 100px;
   animation: fadeInAnimation ease-in-out 1s;
 
   @keyframes fadeInAnimation {
