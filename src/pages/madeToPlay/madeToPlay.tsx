@@ -1,10 +1,23 @@
 import React from "react";
 import { Paragraph, Page, TextComponent, CoverImage } from "../../components";
 import { TextType } from "../../types/text";
-import { sectionOne, sectionTwo } from "./constants";
-import { SectionOne, SectionTwo, Gigamap } from "./madeToPlay.styles";
+import { sectionFour, sectionOne, sectionThree, sectionTwo } from "./constants";
+import {
+  SectionOne,
+  SectionTwo,
+  Gigamap,
+  ImageContainer,
+  GuidedPlay,
+  Process,
+  SectionThree,
+  DesignSystem,
+  SectionFour,
+} from "./madeToPlay.styles";
 import MadeToPlayCoverImage from "../../images/madeToPlay/madeToPlayCover.png";
 import GigamapImage from "../../images/madeToPlay/gigamap.png";
+import ProcessImage from "../../images/madeToPlay/process1.png";
+import GuidedPlayImage from "../../images/madeToPlay/guidedplay1.png";
+import DesignSystemImage from "../../images/madeToPlay/designSystem.png";
 
 const MadeToPlayPage = () => {
   return (
@@ -33,6 +46,22 @@ const MadeToPlayPage = () => {
         ))}
       </SectionTwo>
       <Gigamap src={GigamapImage} />
+      <ImageContainer>
+        <Process src={ProcessImage} />
+        <GuidedPlay src={GuidedPlayImage} />
+      </ImageContainer>
+      <TextComponent type={TextType.SUBHEADER} text="02 branding" />
+      <SectionThree>
+        {sectionThree.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+        <DesignSystem src={DesignSystemImage} />
+      </SectionThree>
+      <SectionFour>
+        {sectionFour.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionFour>
     </Page>
   );
 };

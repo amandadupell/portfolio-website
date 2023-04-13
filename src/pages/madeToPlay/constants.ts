@@ -27,3 +27,19 @@ export const sectionTwo = [
     This research guided our design decisions as we created a proof of concept for the Developmental Handbook that would become “Made to Play”. At the end of this semester, we met with the East Boston Social Center to receive feedback.`,
   },
 ];
+
+export const sectionThree = [
+  {
+    title: "design system",
+    text: `It was important to establish a system for the design elements in our book. From the feedback gathered from our first round of layout design, we explored other options, focusing on simple vectors and effective photography.
+
+    Our final design system outlines page formatting, typographical rules, color palette, pattern usage, as well as the tone and voice of our language.`,
+  },
+];
+
+export const sectionFour = [
+  {
+    title: "illustrations",
+    text: `As a part of our instruction pages for building the toys, we chose to include visual illustrations that originated from the process of creating the toys ourselves. Using the real world process, we were able to create an easily understood system for parents.`,
+  },
+];
