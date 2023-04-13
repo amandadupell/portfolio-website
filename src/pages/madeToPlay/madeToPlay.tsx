@@ -1,9 +1,10 @@
 import React from "react";
 import { Paragraph, Page, TextComponent, CoverImage } from "../../components";
 import { TextType } from "../../types/text";
-import { sectionOne } from "./constants";
-import { SectionOne } from "./madeToPlay.styles";
+import { sectionOne, sectionTwo } from "./constants";
+import { SectionOne, SectionTwo, Gigamap } from "./madeToPlay.styles";
 import MadeToPlayCoverImage from "../../images/madeToPlay/madeToPlayCover.png";
+import GigamapImage from "../../images/madeToPlay/gigamap.png";
 
 const MadeToPlayPage = () => {
   return (
@@ -22,6 +23,16 @@ const MadeToPlayPage = () => {
         ))}
       </SectionOne>
       <CoverImage src={MadeToPlayCoverImage} />
+      <TextComponent
+        type={TextType.SUBHEADER}
+        text="01 research and planning"
+      />
+      <SectionTwo>
+        {sectionTwo.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionTwo>
+      <Gigamap src={GigamapImage} />
     </Page>
   );
 };

@@ -18,3 +18,12 @@ export const sectionOne = [
     Mobile Design`,
   },
 ];
+
+export const sectionTwo = [
+  {
+    title: "early childhood development",
+    text: `Our team spent four months researching the early childhood development sector and gathering information on developmental milestones within the first three years of age. 
+
+    This research guided our design decisions as we created a proof of concept for the Developmental Handbook that would become “Made to Play”. At the end of this semester, we met with the East Boston Social Center to receive feedback.`,
+  },
+];
