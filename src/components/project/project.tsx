@@ -11,6 +11,7 @@ interface ProjectProps {
   src: string;
   color: string;
   to: string;
+  target?: string;
 }
 
 const Project = ({
@@ -20,9 +21,10 @@ const Project = ({
   src,
   color,
   to,
+  target,
 }: ProjectProps) => {
   return (
-    <Link style={{ textDecoration: "none" }} to={to}>
+    <Link target={target} style={{ textDecoration: "none" }} to={to}>
       <Container>
         <ProjectImage src={src} color={color} />
         <TextContainer>

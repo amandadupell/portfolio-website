@@ -29,6 +29,7 @@ export const projectData = [
     skills: "Web Design | Design Process | Development",
     src: PorfolioImage,
     color: $oldPortfolio,
-    to: "/personal-portfolio",
+    to: "https://amandadupell.surge.sh/",
+    target: "_blank",
   },
 ];

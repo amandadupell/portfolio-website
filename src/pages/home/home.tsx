@@ -40,6 +40,7 @@ const HomePage = () => {
             src={item.src}
             color={item.color}
             to={item.to}
+            target={item.target}
           />
         ))}
       </ProjectContainer>

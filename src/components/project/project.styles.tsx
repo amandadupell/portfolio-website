@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 50px;
+  max-width: 500px;
 
   @media screen and (max-width: 1400px) {
     padding: 25px;
