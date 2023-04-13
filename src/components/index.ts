@@ -4,3 +4,4 @@ export { default as Page } from "./page";
 export { default as Paragraph } from "./paragraph";
 export { default as Project } from "./project";
 export { default as ProjectImage } from "./projectImage";
+export { default as CoverImage } from "./coverImage";

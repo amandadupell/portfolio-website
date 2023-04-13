@@ -7,7 +7,9 @@ export const sectionOne = [
   },
   {
     title: "goals",
-    text: "While the application has many useful features, it can be overwhelming and complicated for new users to discover new films. My goal with this project is to redesign certain workflows and screens to ease usability across the platform.",
+    text: `It can be overwhelming and complicated for users to discover films, movie lists, and other users to follow on the application. 
+    
+    My goal with this project was to redesign specific workflows and screens to ease usability and expose more features on the platform.`,
   },
   {
     title: "skills",

@@ -1,8 +1,9 @@
 import React from "react";
-import { Paragraph, Page, TextComponent } from "../../components";
+import { Paragraph, Page, TextComponent, CoverImage } from "../../components";
 import { TextType } from "../../types/text";
 import { sectionOne } from "./constants";
 import { SectionOne } from "./madeToPlay.styles";
+import MadeToPlayCoverImage from "../../images/madeToPlay/madeToPlayCover.png";
 
 const MadeToPlayPage = () => {
   return (
@@ -20,6 +21,7 @@ const MadeToPlayPage = () => {
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionOne>
+      <CoverImage src={MadeToPlayCoverImage} />
     </Page>
   );
 };

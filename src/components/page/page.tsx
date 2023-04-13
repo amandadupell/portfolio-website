@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledPage } from "./page.styles";
 
 interface PageProps {
@@ -7,6 +7,8 @@ interface PageProps {
 }
 
 const Page = ({ children, className }: PageProps) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return <StyledPage className={className}>{children}</StyledPage>;
 };
 
