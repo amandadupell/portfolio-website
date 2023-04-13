@@ -29,6 +29,7 @@ export const StyledText = styled.div<StyledTextProps>`
       Inter,
     sans-serif;
   color: ${$black};
+  ${({ type }) => (type === TextType.HEADER ? `width: 80%;` : "")}
   ${({ nav }) => (nav ? `&:hover { color: ${$orange} }` : "")}
 
   @media screen and (max-width: 800px) {

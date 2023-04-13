@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const StyledTitleBox = styled.div`
   padding: 25px 0;
+  width: 80%;
 `;
 
-export const Container = styled.div`
+export const ProjectContainer = styled.div`
   padding: 25px 175px;
 
   @media screen and (max-width: 1000px) {
@@ -14,12 +15,6 @@ export const Container = styled.div`
   @media screen and (max-width: 800px) {
     padding: 0;
   }
-`;
-
-export const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const StyledArrow = styled.img`
