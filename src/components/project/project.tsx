@@ -5,6 +5,7 @@ import { TextType } from "../../types/text";
 import { Container, TextContainer } from "./project.styles";
 
 interface ProjectProps {
+  className?: any;
   title: string;
   description: string;
   skills: string;
@@ -15,6 +16,7 @@ interface ProjectProps {
 }
 
 const Project = ({
+  className,
   title,
   description,
   skills,
@@ -25,7 +27,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <Link target={target} style={{ textDecoration: "none" }} to={to}>
-      <Container>
+      <Container className={className}>
         <ProjectImage src={src} color={color} />
         <TextContainer>
           <TextComponent type={TextType.TITLE} text={title} />
