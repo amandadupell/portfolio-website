@@ -18,6 +18,7 @@ import {
   Changes,
   DesignSystem,
   FinalDesign,
+  FinalDesignSection,
   Gigamap,
   GuidedPlay,
   Illustrations,
@@ -123,9 +124,11 @@ const MadeToPlayPage = () => {
           <Paragraph text={item.text} />
         ))}
       </SectionNine>
-      {finalDesigns.map((item) => (
-        <FinalDesign src={item} />
-      ))}
+      <FinalDesignSection>
+        {finalDesigns.map((item) => (
+          <FinalDesign src={item} />
+        ))}
+      </FinalDesignSection>
       <TextComponent type={TextType.SUBHEADER} text="05 impact" />
       <SectionTen>
         {sectionTen.map((item) => (

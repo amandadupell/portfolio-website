@@ -23,7 +23,17 @@ export const SectionSeven = styled(SectionOne)`
 `;
 export const SectionEight = styled(SectionOne)``;
 export const SectionNine = styled(SectionOne)``;
-export const SectionTen = styled(SectionSeven)``;
+export const SectionTen = styled(SectionSeven)`
+  margin-bottom: 0;
+`;
+
+export const FinalDesignSection = styled.div`
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
+`;
 
 export const Gigamap = styled.img`
   display: flex;
