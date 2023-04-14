@@ -2,13 +2,14 @@ import React from "react";
 import { Container, StyledCircle, StyledImage } from "./projectImage.styles";
 
 interface ProjectImageProps {
+  className?: any;
   src: string;
   color: string;
 }
 
-const ProjectImage = ({ src, color }: ProjectImageProps) => {
+const ProjectImage = ({ className, src, color }: ProjectImageProps) => {
   return (
-    <Container>
+    <Container className={className}>
       <StyledCircle color={color} />
       <StyledImage src={src} />
     </Container>

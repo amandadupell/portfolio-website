@@ -2,6 +2,7 @@ import React from "react";
 import { Page, Project, TextComponent } from "../../components";
 import { TextType } from "../../types/text";
 import {
+  Container,
   ProjectContainer,
   StyledArrow,
   StyledHand,
@@ -30,20 +31,22 @@ const HomePage = () => {
         />
         <StyledArrow src={Arrow} />
       </StyledTitleBox>
-      <ProjectContainer>
+      <Container>
         <TextComponent type={TextType.SUBHEADER} text="projects" />
-        {projectData.map((item) => (
-          <Project
-            title={item.title}
-            description={item.description}
-            skills={item.skills}
-            src={item.src}
-            color={item.color}
-            to={item.to}
-            target={item.target}
-          />
-        ))}
-      </ProjectContainer>
+        <ProjectContainer>
+          {projectData.map((item) => (
+            <Project
+              title={item.title}
+              description={item.description}
+              skills={item.skills}
+              src={item.src}
+              color={item.color}
+              to={item.to}
+              target={item.target}
+            />
+          ))}
+        </ProjectContainer>
+      </Container>
     </Page>
   );
 };

@@ -3,27 +3,34 @@ import { TextType } from "../../types/text";
 import { StyledText } from "./textComponent.styles";
 
 interface TextComponentProps {
+  className?: any;
   text: string;
   type?: TextType;
   bold?: boolean;
   nav?: boolean;
 }
 
-const TextComponent = ({ nav, text, type, bold }: TextComponentProps) => {
+const TextComponent = ({
+  className,
+  nav,
+  text,
+  type,
+  bold,
+}: TextComponentProps) => {
   return type === TextType.HEADER ? (
     <h1>
-      <StyledText nav={nav} type={type} bold={bold}>
+      <StyledText className={className} nav={nav} type={type} bold={bold}>
         {text}
       </StyledText>
     </h1>
   ) : type === TextType.SUBHEADER ? (
     <h2>
-      <StyledText nav={nav} type={type} bold={bold}>
+      <StyledText className={className} nav={nav} type={type} bold={bold}>
         {text}
       </StyledText>
     </h2>
   ) : (
-    <StyledText nav={nav} type={type} bold={bold}>
+    <StyledText className={className} nav={nav} type={type} bold={bold}>
       {text}
     </StyledText>
   );

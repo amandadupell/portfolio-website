@@ -29,7 +29,12 @@ export const StyledText = styled.div<StyledTextProps>`
       Inter,
     sans-serif;
   color: ${$black};
+  ${({ type }) =>
+    type === TextType.HEADER || type === TextType.SUBHEADER
+      ? `width: 80%;`
+      : ""}
   ${({ nav }) => (nav ? `&:hover { color: ${$orange} }` : "")}
+  white-space: pre-line;
 
   @media screen and (max-width: 800px) {
     font: ${({ bold }) => (bold ? "700" : "")}
