@@ -23,6 +23,7 @@ export const SectionSeven = styled(SectionOne)`
 `;
 export const SectionEight = styled(SectionOne)``;
 export const SectionNine = styled(SectionOne)``;
+export const SectionTen = styled(SectionSeven)``;
 
 export const Gigamap = styled.img`
   display: flex;

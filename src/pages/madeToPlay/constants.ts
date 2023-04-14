@@ -92,6 +92,21 @@ export const sectionNine = [
   },
 ];
 
+export const sectionTen = [
+  {
+    title: "city of boston",
+    text: `At the end of the semester, we presented our final book to the East Boston Social Center and several people from the mayor’s office for childhood education. 
+
+    As of March 2023, we are continuing  to work with the city of Boston and the mayor to print and distribute our book citywide to families with young children. From this, we will collect more user feedback and further iterate on the book.`,
+  },
+  {
+    title: "takeaways",
+    text: `From the start of the fall semester semester (Fall 2021) to spring (Spring 2022), I learned a lot about the research and design process that goes into a large-scale project like this one. It was amazing to meet and work with the East Boston Social Center, as I feel like our design decisions are driven by a community that benefit from the product we made instead of a “personal project”. 
+
+    Together, we researched, created a design system, user tested, and published a book. The experience was incredibly rewarding, and I am so proud of the final product!`,
+  },
+];
+
 export const finalDesigns = [
   FinalDesign1,
   FinalDesign2,

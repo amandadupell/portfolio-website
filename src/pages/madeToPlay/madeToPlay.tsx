@@ -10,6 +10,7 @@ import {
   sectionOne,
   sectionSeven,
   sectionSix,
+  sectionTen,
   sectionThree,
   sectionTwo,
 } from "./constants";
@@ -31,6 +32,7 @@ import {
   SectionOne,
   SectionSeven,
   SectionSix,
+  SectionTen,
   SectionThree,
   SectionTwo,
   UserTesting,
@@ -124,6 +126,12 @@ const MadeToPlayPage = () => {
       {finalDesigns.map((item) => (
         <FinalDesign src={item} />
       ))}
+      <TextComponent type={TextType.SUBHEADER} text="05 impact" />
+      <SectionTen>
+        {sectionTen.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionTen>
     </Page>
   );
 };
