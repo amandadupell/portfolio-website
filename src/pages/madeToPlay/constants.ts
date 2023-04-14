@@ -1,3 +1,13 @@
+import FinalDesign1 from "../../images/madeToPlay/FinalDesign1.png";
+import FinalDesign2 from "../../images/madeToPlay/FinalDesign2.png";
+import FinalDesign3 from "../../images/madeToPlay/FinalDesign3.png";
+import FinalDesign4 from "../../images/madeToPlay/FinalDesign4.png";
+import FinalDesign5 from "../../images/madeToPlay/FinalDesign5.png";
+import FinalDesign6 from "../../images/madeToPlay/FinalDesign6.png";
+import FinalDesign7 from "../../images/madeToPlay/FinalDesign7.png";
+import FinalDesign8 from "../../images/madeToPlay/FinalDesign8.png";
+import FinalDesign9 from "../../images/madeToPlay/FinalDesign9.png";
+
 export const sectionOne = [
   {
     title: "overview",
@@ -42,4 +52,54 @@ export const sectionFour = [
     title: "illustrations",
     text: `As a part of our instruction pages for building the toys, we chose to include visual illustrations that originated from the process of creating the toys ourselves. Using the real world process, we were able to create an easily understood system for parents.`,
   },
+];
+
+export const sectionFive = [
+  {
+    title: "photography",
+    text: `We wanted photos of the toys that we made to be the cover of the toy instructions so parents could have a realistic image of what the final product would look like. 
+
+    For our photography, we went with a white background so it would not be distracting from the toy. It also provided consistency across the variety in toys.`,
+  },
+];
+
+export const sectionSix = [
+  {
+    title: "template",
+    text: `For our user testing, we created a template with the format for a user testing session.`,
+  },
+];
+
+export const sectionSeven = [
+  {
+    title: "observation",
+    text: `While user testing, we were looking for feedback related to the language, illustrations, and process of making each toy to ensure an easy and logical flow. Our user testing sessions were recorded over Zoom with permission.`,
+  },
+];
+
+export const sectionEight = [
+  {
+    title: "feedback and changes",
+    text: `Based on the feedback from user testing, we made a few small changes in the language and illustrations that went alongside the toy instructions. 
+
+    The largest change came from feedback around our Rattle Bracelet. When conducting user testing, we found that a lot of the steps and pictures were not detailed enough. With more investigation, we determined that the toy was too confusing and needed to be scratched altogether. After further research, we found another toy that aligned with the targeted milestones that the Rattle Bracelet covered. We did a round of user testing with the new toy, ensuring it was easy to understand and make.`,
+  },
+];
+
+export const sectionNine = [
+  {
+    text: `The following pages showcase some of the final spreads for the design of our book. We chose to incorporate our larger-pattern pieces across the spreads, as it ties in more clearly. The main components of the to pages and guided play remained the same, with some slight changes to illustrations where needed. We also chose to have the guided play immediately follow the toy pages because it made sense when discussing the flow of creating a toy and then finding the activity to use it in.`,
+  },
+];
+
+export const finalDesigns = [
+  FinalDesign1,
+  FinalDesign2,
+  FinalDesign3,
+  FinalDesign4,
+  FinalDesign5,
+  FinalDesign6,
+  FinalDesign7,
+  FinalDesign8,
+  FinalDesign9,
 ];
