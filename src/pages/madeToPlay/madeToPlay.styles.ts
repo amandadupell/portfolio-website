@@ -1,18 +1,7 @@
 import styled from "styled-components";
+import { Section } from "../shared.styles";
 
-export const SectionOne = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 125px 0;
-  padding: 0 50px;
-
-  @media screen and (max-width: 1000px) {
-    margin: 50px 0;
-    flex-direction: column;
-    padding: 0;
-  }
-`;
-
+export const SectionOne = styled(Section)``;
 export const SectionTwo = styled(SectionOne)``;
 export const SectionThree = styled(SectionOne)``;
 export const SectionFour = styled(SectionOne)``;

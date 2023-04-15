@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage, MadeToPlayPage } from "./pages";
+import { AboutPage, HomePage, LetterboxdPage, MadeToPlayPage } from "./pages";
 
 function App() {
   return (
@@ -9,8 +9,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/*" element={<HomePage />} />
-        <Route path="/about/*" />
+        <Route path="/about/*" element={<AboutPage />} />
         <Route path="/made-to-play/*" element={<MadeToPlayPage />} />
+        <Route path="/letterboxd/*" element={<LetterboxdPage />} />
       </Routes>
     </BrowserRouter>
   );

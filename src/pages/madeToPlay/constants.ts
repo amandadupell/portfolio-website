@@ -11,21 +11,18 @@ import FinalDesign9 from "../../images/madeToPlay/FinalDesign9.png";
 export const sectionOne = [
   {
     title: "overview",
-    text: `Letterboxd is a social media platform and network for film lovers. It allows you to track, rate, and review movies you’ve seen and add others to a watchlist for future viewing.
-    
-    The application has garnered a large following and is one of the leading “movie review” mobile applications.`,
+    text: `Made to Play is a developmental handbook that utilizes accessible, household items to create a series of easy-to-make DIY toys. For each toy, there is a corresponding “guided play” activity in the book that assists parents in monitoring their child’s development from 0 to 3 years old.`,
   },
   {
     title: "goals",
-    text: `It can be overwhelming and complicated for users to discover films, movie lists, and other users to follow on the application. 
-    
-    My goal with this project was to redesign specific workflows and screens to ease usability and expose more features on the platform.`,
+    text: `Developmental screening is not always accessible to parents of young children. With our book, parents will be more educated and aware of the positive impacts of active parental monitoring, allowing for earlier intervention into their child’s development milestones. Specifically, our project focused on accessibility, education, and awareness.`,
   },
   {
     title: "skills",
-    text: `User Research
-    User Experience
-    Mobile Design`,
+    text: `Branding
+    User Research
+    User Testing
+    Layout Design`,
   },
 ];
 
