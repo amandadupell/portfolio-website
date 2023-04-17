@@ -2,26 +2,39 @@ import React from "react";
 import { Paragraph, Page, TextComponent, CoverImage } from "../../components";
 import { TextType } from "../../types/text";
 import {
+  sectionEight,
+  sectionNine,
   sectionFive,
   sectionFour,
   sectionOne,
+  sectionSeven,
   sectionSix,
   sectionSixText,
   sectionThree,
   sectionTwo,
 } from "./constants";
 import {
+  FocusArea,
+  HomepageFlow,
+  ImageContainer,
+  SectionEight,
   SectionFive,
   SectionFour,
+  SectionNine,
   SectionOne,
+  SectionSeven,
   SectionSix,
   SectionThree,
   SectionTwo,
+  SignUpFlow,
+  Sketch,
 } from "./letterboxd.styles";
 import { HalfImage } from "../shared.styles";
 import LetteboxdCoverImage from "../../images/letterboxd/letterboxdCoverImage.png";
 import ExisitingBrandImage from "../../images/letterboxd/existingbrand.png";
 import UserFeedbackImage from "../../images/letterboxd/userfeedback.png";
+import SignUpFlowImage from "../../images/letterboxd/signupflow.png";
+import HomepageFlowImage from "../../images/letterboxd/homepageflow.png";
 
 const LetterboxdPage = () => {
   return (
@@ -71,8 +84,32 @@ const LetterboxdPage = () => {
         {sectionSix.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <TextComponent type={TextType.TITLE} text={sectionSixText} />
+        <FocusArea>
+          <TextComponent type={TextType.TITLE} text={sectionSixText} />
+        </FocusArea>
       </SectionSix>
+      <SectionSeven>
+        {sectionSeven.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionSeven>
+      <ImageContainer>
+        <TextComponent bold type={TextType.SUBTITLE} text="sign up" />
+        <SignUpFlow src={SignUpFlowImage} />
+        <TextComponent bold type={TextType.SUBTITLE} text="homepage" />
+        <HomepageFlow src={HomepageFlowImage} />
+      </ImageContainer>
+      <TextComponent type={TextType.SUBHEADER} text="03 brainstorm" />
+      <SectionEight>
+        {sectionEight.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionEight>
+      <SectionNine>
+        {sectionNine.map((item) => (
+          <Sketch src={item} />
+        ))}
+      </SectionNine>
     </Page>
   );
 };

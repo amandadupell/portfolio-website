@@ -1,3 +1,7 @@
+import SignUpSketch1 from "../../images/letterboxd/signupsketch1.png";
+import SignUpSketch2 from "../../images/letterboxd/signupsketch2.png";
+import SignUpSketch3 from "../../images/letterboxd/signupsketch3.png";
+
 export const sectionOne = [
   {
     title: "overview",
@@ -70,3 +74,19 @@ export const sectionSix = [
 export const sectionSixText = `1. Create a new sign up flow with user follow and movie recommendations 
 
 2. Rework the home screen to include movie recommendations and access to hidden features`;
+
+export const sectionSeven = [
+  {
+    title: "user flows",
+    text: `For each of the areas of focus, I created an ideal user flow to help me identify potential pain points and better understand the structure for my designs.`,
+  },
+];
+
+export const sectionEight = [
+  {
+    title: "sketch",
+    text: `To begin the ideation phase, I started by sketching low-fidelity screens that aligned with the user flows from the strategy phase and stemmed from my initial research.`,
+  },
+];
+
+export const sectionNine = [SignUpSketch1, SignUpSketch2, SignUpSketch3];
