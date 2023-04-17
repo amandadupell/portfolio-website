@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Section } from "../shared.styles";
+import { FullImage, HalfImage, Section } from "../shared.styles";
 
 export const SectionOne = styled(Section)``;
 export const SectionTwo = styled(SectionOne)``;
@@ -24,12 +24,7 @@ export const FinalDesignSection = styled.div`
   }
 `;
 
-export const Gigamap = styled.img`
-  display: flex;
-  width: 100%;
-  height: auto;
-`;
-
+export const Gigamap = styled(FullImage)``;
 export const Illustrations = styled(Gigamap)``;
 export const FinalDesign = styled(Gigamap)`
   margin: 50px 0;
@@ -45,16 +40,7 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const Process = styled.img`
-  width: 50%;
-  height: auto;
-
-  @media screen and (max-width: 1000px) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-`;
-
+export const Process = styled(HalfImage)``;
 export const GuidedPlay = styled(Process)``;
 export const Observation = styled(Process)``;
 
