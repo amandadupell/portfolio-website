@@ -15,6 +15,7 @@ import {
   sectionTen,
   sectionEleven,
   sectionTwelve,
+  sectionThirteen,
 } from "./constants";
 import {
   FocusArea,
@@ -29,12 +30,14 @@ import {
   SectionSeven,
   SectionSix,
   SectionTen,
+  SectionThirteen,
   SectionThree,
   SectionTwelve,
   SectionTwo,
   SignUpFinal,
   SignUpFlow,
   Sketch,
+  TextContainer,
 } from "./letterboxd.styles";
 import { HalfImage } from "../shared.styles";
 import LetteboxdCoverImage from "../../images/letterboxd/letterboxdCoverImage.png";
@@ -43,6 +46,7 @@ import UserFeedbackImage from "../../images/letterboxd/userfeedback.png";
 import SignUpFlowImage from "../../images/letterboxd/signupflow.png";
 import HomepageFlowImage from "../../images/letterboxd/homepageflow.png";
 import SignUpFinalImage from "../../images/letterboxd/signupfinal.png";
+import HomeFinalImage from "../../images/letterboxd/homefinal.png";
 
 const LetterboxdPage = () => {
   return (
@@ -135,6 +139,14 @@ const LetterboxdPage = () => {
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionTwelve>
+      <SectionThirteen>
+        <TextContainer>
+          {sectionThirteen.map((item) => (
+            <Paragraph title={item.title} text={item.text} />
+          ))}
+        </TextContainer>
+        <HalfImage src={HomeFinalImage} />
+      </SectionThirteen>
     </Page>
   );
 };

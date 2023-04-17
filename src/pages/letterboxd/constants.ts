@@ -112,3 +112,34 @@ export const sectionTwelve = [
     text: `The home screen redesign allows for more film discovery for a user by providing movies, movie lists and user follow recommendations based on preferences.`,
   },
 ];
+
+export const sectionThirteen = [
+  {
+    title: "featured movies",
+    text: `To engage users more, I wanted to create a more interactive UI for the popular movies of the week. This redesign includes more information for the user to base their interactions around. The user is given insight into the public ratings and review count, as well as the movie’s related genres.`,
+  },
+  {
+    title: "movie recomendations",
+    text: `Based on the user’s movie reviews, ratings, users they follow, and genre selections upon sign up, their movie recommendations will be updated.
+
+    This section serves as a way to continuously rotate user preferences and ensure they are discovering new films every week.`,
+  },
+  {
+    title: "new from friends",
+    text: `Taking from the original home screen, I decided to keep the “New from friends” feature. This allows for users to discover new films and read reviews from users they follow.`,
+  },
+  {
+    title: "movie lists",
+    text: `When researching user feedback, many users reported “movie lists” as one of the application’s hidden features. 
+
+    To address this pain point, I chose to include a peek into a user’s suggested lists on the home screen. This allows for further film exploration, as well as insight into one of the app’s features.`,
+  },
+  {
+    title: "popular reviews",
+    text: `As a way for users to discover more users and films, I included this “Popular reviews” section. Users will be able to read popular reviews on popular movies and choose whether or not to a.) follow the user and/or b.) watch the film.`,
+  },
+  {
+    title: "suggested users",
+    text: `As the user continues to log their film activity, this section will allow them to discover new users to follow.`,
+  },
+];

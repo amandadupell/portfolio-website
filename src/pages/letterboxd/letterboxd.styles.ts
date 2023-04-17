@@ -21,6 +21,7 @@ export const SectionTen = styled(Section)`
 `;
 export const SectionEleven = styled(Section)``;
 export const SectionTwelve = styled(Section)``;
+export const SectionThirteen = styled(SectionTen)``;
 
 export const FocusArea = styled.div`
   display: flex;
@@ -60,4 +61,10 @@ export const SignUpFinal = styled(FullImage)`
 export const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `;
