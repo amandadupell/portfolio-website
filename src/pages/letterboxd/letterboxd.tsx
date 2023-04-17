@@ -12,20 +12,27 @@ import {
   sectionSixText,
   sectionThree,
   sectionTwo,
+  sectionTen,
+  sectionEleven,
+  sectionTwelve,
 } from "./constants";
 import {
   FocusArea,
   HomepageFlow,
   ImageContainer,
   SectionEight,
+  SectionEleven,
   SectionFive,
   SectionFour,
   SectionNine,
   SectionOne,
   SectionSeven,
   SectionSix,
+  SectionTen,
   SectionThree,
+  SectionTwelve,
   SectionTwo,
+  SignUpFinal,
   SignUpFlow,
   Sketch,
 } from "./letterboxd.styles";
@@ -35,6 +42,7 @@ import ExisitingBrandImage from "../../images/letterboxd/existingbrand.png";
 import UserFeedbackImage from "../../images/letterboxd/userfeedback.png";
 import SignUpFlowImage from "../../images/letterboxd/signupflow.png";
 import HomepageFlowImage from "../../images/letterboxd/homepageflow.png";
+import SignUpFinalImage from "../../images/letterboxd/signupfinal.png";
 
 const LetterboxdPage = () => {
   return (
@@ -110,6 +118,23 @@ const LetterboxdPage = () => {
           <Sketch src={item} />
         ))}
       </SectionNine>
+      <SectionTen>
+        {sectionTen.map((item) => (
+          <Sketch src={item} />
+        ))}
+      </SectionTen>
+      <TextComponent type={TextType.SUBHEADER} text="04 final designs" />
+      <SectionEleven>
+        {sectionEleven.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+        <SignUpFinal src={SignUpFinalImage} />
+      </SectionEleven>
+      <SectionTwelve>
+        {sectionTwelve.map((item) => (
+          <Paragraph title={item.title} text={item.text} />
+        ))}
+      </SectionTwelve>
     </Page>
   );
 };

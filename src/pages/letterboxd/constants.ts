@@ -1,6 +1,8 @@
 import SignUpSketch1 from "../../images/letterboxd/signupsketch1.png";
 import SignUpSketch2 from "../../images/letterboxd/signupsketch2.png";
 import SignUpSketch3 from "../../images/letterboxd/signupsketch3.png";
+import HomeSketchImage from "../../images/letterboxd/homesketch.png";
+import HomeLofiImage from "../../images/letterboxd/homelofi.png";
 
 export const sectionOne = [
   {
@@ -84,9 +86,29 @@ export const sectionSeven = [
 
 export const sectionEight = [
   {
-    title: "sketch",
-    text: `To begin the ideation phase, I started by sketching low-fidelity screens that aligned with the user flows from the strategy phase and stemmed from my initial research.`,
+    title: "sketch and lo-fi",
+    text: `To begin the ideation phase, I started by sketching low-fidelity screens that aligned with the user flows from the strategy phase and stemmed from my initial research.
+    
+    From there, I created a low-fidelity layout for the application's home screen.`,
   },
 ];
 
 export const sectionNine = [SignUpSketch1, SignUpSketch2, SignUpSketch3];
+
+export const sectionTen = [HomeSketchImage, HomeLofiImage];
+
+export const sectionEleven = [
+  {
+    title: "new sign up screens",
+    text: `To address the lack of movie recommendations and user-to-user interactions, I wanted to include new screens in the sign up process.
+
+    In these new screens, users will select genres that they like or are interested in. From there, they will be able to follow users that may have similar interests or popularity in a genre.`,
+  },
+];
+
+export const sectionTwelve = [
+  {
+    title: "new home screen",
+    text: `The home screen redesign allows for more film discovery for a user by providing movies, movie lists and user follow recommendations based on preferences.`,
+  },
+];

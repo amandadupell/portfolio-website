@@ -16,6 +16,11 @@ export const SectionSix = styled(Section)`
 export const SectionSeven = styled(Section)``;
 export const SectionEight = styled(Section)``;
 export const SectionNine = styled(Section)``;
+export const SectionTen = styled(Section)`
+  justify-content: space-around;
+`;
+export const SectionEleven = styled(Section)``;
+export const SectionTwelve = styled(Section)``;
 
 export const FocusArea = styled.div`
   display: flex;
@@ -33,12 +38,22 @@ export const SignUpFlow = styled(FullImage)`
 export const HomepageFlow = styled(SignUpFlow)``;
 
 export const Sketch = styled(HalfImage)`
-  width: 30%;
+  width: auto;
+  height: 100%;
 
   @media screen and (max-width: 1000px) {
     width: 50%;
     align-self: center;
     margin-bottom: 20px;
+  }
+`;
+
+export const SignUpFinal = styled(FullImage)`
+  width: 70%;
+  height: 100%;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
   }
 `;
 
