@@ -10,18 +10,18 @@ interface StyledTextProps {
 }
 
 export const StyledText = styled.div<StyledTextProps>`
-  font: ${({ bold }) => (bold ? "700" : "")}
+  font: ${({ bold }) => (bold ? "700 " : "")}
       ${({ type }) => {
         switch (type) {
           case TextType.HEADER:
           case TextType.SUBHEADER:
-            return "700 48px/54px";
+            return "700 2em";
           case TextType.TITLE:
-            return "700 26px/32px";
+            return "700 1.5em";
           case TextType.SUBTITLE:
-            return "20px/26px";
+            return "1.25em";
           case TextType.PARAGRAPH:
-            return "16px/22px";
+            return "1em";
           default:
             return;
         }
@@ -35,25 +35,4 @@ export const StyledText = styled.div<StyledTextProps>`
       : ""}
   ${({ nav }) => (nav ? `&:hover { color: ${$orange} }` : "")}
   white-space: pre-line;
-
-  @media screen and (max-width: 800px) {
-    font: ${({ bold }) => (bold ? "700" : "")}
-        ${({ type }) => {
-          switch (type) {
-            case TextType.HEADER:
-            case TextType.SUBHEADER:
-              return "700 28px/34px";
-            case TextType.TITLE:
-              return "700 20px/26px";
-            case TextType.SUBTITLE:
-              return "16px/22px";
-            case TextType.PARAGRAPH:
-              return "10px/16px";
-            default:
-              return;
-          }
-        }}
-        Inter,
-      sans-serif;
-  }
 `;
