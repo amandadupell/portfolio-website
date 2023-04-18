@@ -1,20 +1,45 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { TextComponent } from "..";
 
 export const StyledFooter = styled.footer`
   display: flex;
-  padding-bottom: 50px;
   border-top: 3px dotted black;
-  height: 30vh;
+  justify-content: space-around;
 `;
 
 export const StyledBox = styled.div`
   display: flex;
   flex-direction: column;
   padding: 100px;
+  width: 30%;
 `;
 
-export const StyledLink = styled.a`
+export const ProjectContainer = styled(StyledBox)`
+  margin-top: 50px;
+`;
+
+export const StyledText = styled(TextComponent)`
+  margin-left: 25px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 5px;
+  }
+`;
+
+export const StyledA = styled.a`
+  text-decoration: none;
+
+  @media screen and (max-width: 800px) {
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const StyledLink = styled(Link)`
   text-decoration: none;
 
   @media screen and (max-width: 800px) {
@@ -28,7 +53,6 @@ export const StyledLink = styled.a`
 export const Scissors = styled.img`
   position: relative;
   top: 21px;
-  left: 75%;
 
   @keyframes animate {
     from {
