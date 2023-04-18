@@ -6,6 +6,10 @@ export const StyledFooter = styled.footer`
   display: flex;
   border-top: 3px dotted black;
   justify-content: space-around;
+
+  @media screen and (max-width: 800px) {
+    padding: 50px 0;
+  }
 `;
 
 export const StyledBox = styled.div`
