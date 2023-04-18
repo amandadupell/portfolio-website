@@ -1,16 +1,10 @@
 import styled from "styled-components";
-import { Section } from "../shared.styles";
+import { HalfImage, Section } from "../shared.styles";
 
 export const Container = styled(Section)`
-  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  margin-top: 100px;
 `;
 
-export const StyledProfile = styled.img`
-  width: 50%;
-  height: auto;
-
-  @media screen and (max-width: 1000px) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-`;
+export const StyledProfile = styled(HalfImage)``;

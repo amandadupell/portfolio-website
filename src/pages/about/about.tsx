@@ -1,16 +1,19 @@
 import React from "react";
-import { Page, Paragraph, TextComponent } from "../../components";
-import { TextType } from "../../types/text";
+import { Page, Paragraph } from "../../components";
 import { Container, StyledProfile } from "./about.styles";
 import ProfileImage from "../../images/about/profile.png";
+import { info } from "./constants";
 
 const AboutPage = () => {
   return (
     <Page>
       <Container>
         <StyledProfile src={ProfileImage} />
-        <TextComponent type={TextType.SUBHEADER} text="A little bit about me" />
-        <Paragraph text="jsbfiuwberuonoansfjuirouweouanj" />
+        <Paragraph
+          size="large"
+          header="A little bit about me"
+          text={info.text}
+        />
       </Container>
     </Page>
   );
