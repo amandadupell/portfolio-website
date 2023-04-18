@@ -23,7 +23,7 @@ export const projectData = [
     to: "/letterboxd",
   },
   {
-    title: "Personal Potfolio",
+    title: "Personal Portfolio",
     description:
       "When I graduated from university, I knew I wanted my first design to development project to be my personal portfolio. The projects showcased on this portfolio are from my college design career and are not included on this portfolio. Give it a look!",
     skills: "Web Design | Design Process | Development",
