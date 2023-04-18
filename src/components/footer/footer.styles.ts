@@ -13,6 +13,10 @@ export const StyledBox = styled.div`
   flex-direction: column;
   padding: 100px;
   width: 30%;
+
+  @media screen and (max-width: 800px) {
+    padding: 25px;
+  }
 `;
 
 export const ProjectContainer = styled(StyledBox)`
@@ -24,6 +28,7 @@ export const StyledText = styled(TextComponent)`
   margin-bottom: 10px;
 
   @media screen and (max-width: 800px) {
+    margin-left: 10px;
     margin-bottom: 5px;
   }
 `;
