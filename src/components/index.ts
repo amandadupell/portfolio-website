@@ -5,3 +5,4 @@ export { default as Paragraph } from "./paragraph";
 export { default as Project } from "./project";
 export { default as ProjectImage } from "./projectImage";
 export { default as CoverImage } from "./coverImage";
+export { default as Footer } from "./footer";
