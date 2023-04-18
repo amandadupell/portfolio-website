@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   transition: transform 0.2s ease-in-out;
   &: hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.1, 1.1);
   }
 
   @media screen and (max-width: 1200px) {
