@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TextComponent } from "..";
 
 export const Container = styled.div`
   display: flex;
@@ -12,25 +13,23 @@ export const Container = styled.div`
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     margin-top: 50px;
+    align-items: center;
   }
+`;
+
+export const StyledText = styled(TextComponent)`
+  padding-bottom: 20px;
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 50px 0 50px 50px;
+  justify-content: center;
   max-width: 500px;
-
-  @media screen and (max-width: 1400px) {
-    padding: 25px;
-  }
-
-  @media screen and (max-width: 1200px) {
-    height: 225px;
-  }
+  margin-left: 50px;
 
   @media screen and (max-width: 800px) {
-    height: 150px;
+    margin: 0 50px;
+    text-align: center;
   }
 `;
