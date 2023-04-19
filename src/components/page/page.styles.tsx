@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyledPage = styled.div`
   padding: 50px 100px 200px 100px;
   animation: fadeInAnimation ease-in-out 1s;
+  -webkit-animation: fadeInAnimation ease-in-out 1s;
+  -moz-animation: fadeInAnimation ease-in-out 1s;
+  -o-animation: fadeInAnimation ease-in-out 1s;
 
   @keyframes fadeInAnimation {
     0% {

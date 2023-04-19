@@ -38,6 +38,9 @@ export const StyledHand = styled.img`
   height: 300px;
   width: 300px;
   animation: 1.5s ease-out 0s slideInRight, spin 2s;
+  -webkit-animation: 1.5s ease-out 0s slideInRight, spin 2s;
+  -moz-animation: 1.5s ease-out 0s slideInRight, spin 2s;
+  -o-animation: 1.5s ease-out 0s slideInRight, spin 2s;
 
   @keyframes slideInRight {
     0% {
