@@ -8,20 +8,24 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: 1000px) {
+    padding-bottom: 20px;
+  }
 `;
 
 export const StyledCircle = styled.div<StyledProjectImageProps>`
   position: relative;
   top: 0;
   left: 0;
-  height: 325px;
-  width: 325px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   background-color: ${({ color }) => color};
 
   @media screen and (max-width: 1000px) {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 `;
 
@@ -29,12 +33,12 @@ export const StyledImage = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 325px;
-  width: 325px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
 
   @media screen and (max-width: 1000px) {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 `;
