@@ -37,10 +37,6 @@ export const StyledHand = styled.img`
   margin-bottom: 25px;
   height: 250px;
   width: 250px;
-  animation: 1.5s ease-out 0s slideInRight, spin 2s;
-  -webkit-animation: 1.5s ease-out 0s slideInRight, spin 2s;
-  -moz-animation: 1.5s ease-out 0s slideInRight, spin 2s;
-  -o-animation: 1.5s ease-out 0s slideInRight, spin 2s;
 
   @keyframes slideInRight {
     0% {
@@ -61,5 +57,12 @@ export const StyledHand = styled.img`
     height: 100px;
     width: 100px;
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 800px) {
+    animation: 1.5s ease-out 0s slideInRight, spin 2s;
+    -webkit-animation: 1.5s ease-out 0s slideInRight, spin 2s;
+    -moz-animation: 1.5s ease-out 0s slideInRight, spin 2s;
+    -o-animation: 1.5s ease-out 0s slideInRight, spin 2s;
   }
 `;

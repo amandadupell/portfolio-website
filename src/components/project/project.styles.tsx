@@ -25,7 +25,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 500px;
+  max-width: 400px;
   margin-left: 50px;
 
   @media screen and (max-width: 800px) {
