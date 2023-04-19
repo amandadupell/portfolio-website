@@ -8,7 +8,7 @@ interface StyledParagraphProps {
 export const Container = styled.div<StyledParagraphProps>`
   display: flex;
   flex-direction: column;
-  width: ${({ size }) => (size === "large" ? "40%" : "300px")};
+  width: ${({ size }) => (size === "large" ? "40%" : "250px")};
 
   @media screen and (max-width: 1000px) {
     margin-bottom: 25px;

@@ -35,8 +35,8 @@ export const StyledArrow = styled.img`
 export const StyledHand = styled.img`
   display: flex;
   margin-bottom: 25px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   animation: 1.5s ease-out 0s slideInRight, spin 2s;
   -webkit-animation: 1.5s ease-out 0s slideInRight, spin 2s;
   -moz-animation: 1.5s ease-out 0s slideInRight, spin 2s;
