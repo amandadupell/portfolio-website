@@ -48,6 +48,18 @@ import ObservationsImage from "../../images/madeToPlay/observations.png";
 import PhotographyImage from "../../images/madeToPlay/photography.png";
 import ProcessImage from "../../images/madeToPlay/process1.png";
 import UserTestingImage from "../../images/madeToPlay/usertesting.png";
+import {
+  changesImageDesc,
+  designSystemImageDesc,
+  gigamapImageDesc,
+  guidedPlayImageDesc,
+  illustrationsImageDesc,
+  madeToPlayCoverImageDesc,
+  observationsImageDesc,
+  photographyImageDesc,
+  processImageDesc,
+  usertestingImageDesc,
+} from "../../images/madeToPlay/imagedescriptions";
 
 const MadeToPlayPage = () => {
   return (
@@ -65,7 +77,7 @@ const MadeToPlayPage = () => {
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionOne>
-      <CoverImage src={MadeToPlayCoverImage} />
+      <CoverImage alt={madeToPlayCoverImageDesc} src={MadeToPlayCoverImage} />
       <TextComponent
         type={TextType.SUBHEADER}
         text="01 research and planning"
@@ -75,39 +87,39 @@ const MadeToPlayPage = () => {
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionTwo>
-      <Gigamap src={GigamapImage} />
+      <Gigamap alt={gigamapImageDesc} src={GigamapImage} />
       <ImageContainer>
-        <Process src={ProcessImage} />
-        <GuidedPlay src={GuidedPlayImage} />
+        <Process alt={processImageDesc} src={ProcessImage} />
+        <GuidedPlay alt={guidedPlayImageDesc} src={GuidedPlayImage} />
       </ImageContainer>
       <TextComponent type={TextType.SUBHEADER} text="02 branding" />
       <SectionThree>
         {sectionThree.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <DesignSystem src={DesignSystemImage} />
+        <DesignSystem alt={designSystemImageDesc} src={DesignSystemImage} />
       </SectionThree>
       <SectionFour>
         {sectionFour.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionFour>
-      <Illustrations src={IllustrationsImage} />
+      <Illustrations alt={illustrationsImageDesc} src={IllustrationsImage} />
       <SectionFive>
         {sectionFive.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <Photography src={PhotographyImage} />
+        <Photography alt={photographyImageDesc} src={PhotographyImage} />
       </SectionFive>
       <TextComponent type={TextType.SUBHEADER} text="03 user testing" />
       <SectionSix>
         {sectionSix.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <UserTesting src={UserTestingImage} />
+        <UserTesting alt={usertestingImageDesc} src={UserTestingImage} />
       </SectionSix>
       <SectionSeven>
-        <Observation src={ObservationsImage} />
+        <Observation alt={observationsImageDesc} src={ObservationsImage} />
         {sectionSeven.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
@@ -116,7 +128,7 @@ const MadeToPlayPage = () => {
         {sectionEight.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <Changes src={ChangesImage} />
+        <Changes alt={changesImageDesc} src={ChangesImage} />
       </SectionEight>
       <TextComponent type={TextType.SUBHEADER} text="04 final designs" />
       <SectionNine>
@@ -126,7 +138,7 @@ const MadeToPlayPage = () => {
       </SectionNine>
       <FinalDesignSection>
         {finalDesigns.map((item) => (
-          <FinalDesign src={item} />
+          <FinalDesign src={item.src} alt={item.altText} />
         ))}
       </FinalDesignSection>
       <TextComponent type={TextType.SUBHEADER} text="05 impact" />

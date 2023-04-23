@@ -93,9 +93,16 @@ export const sectionEight = [
   },
 ];
 
-export const sectionNine = [SignUpSketch1, SignUpSketch2, SignUpSketch3];
+export const sectionNine = [
+  { src: SignUpSketch1, altText: "" },
+  { src: SignUpSketch2, altText: "" },
+  { src: SignUpSketch3, altText: "" },
+];
 
-export const sectionTen = [HomeSketchImage, HomeLofiImage];
+export const sectionTen = [
+  { src: HomeSketchImage, altText: "" },
+  { src: HomeLofiImage, altText: "" },
+];
 
 export const sectionEleven = [
   {

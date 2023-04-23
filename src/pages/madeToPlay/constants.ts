@@ -105,13 +105,40 @@ export const sectionTen = [
 ];
 
 export const finalDesigns = [
-  FinalDesign1,
-  FinalDesign2,
-  FinalDesign3,
-  FinalDesign4,
-  FinalDesign5,
-  FinalDesign6,
-  FinalDesign7,
-  FinalDesign8,
-  FinalDesign9,
+  {
+    src: FinalDesign1,
+    altText: "",
+  },
+  {
+    src: FinalDesign2,
+    altText: "",
+  },
+  {
+    src: FinalDesign3,
+    altText: "",
+  },
+  {
+    src: FinalDesign4,
+    altText: "",
+  },
+  {
+    src: FinalDesign5,
+    altText: "",
+  },
+  {
+    src: FinalDesign6,
+    altText: "",
+  },
+  {
+    src: FinalDesign7,
+    altText: "",
+  },
+  {
+    src: FinalDesign8,
+    altText: "",
+  },
+  {
+    src: FinalDesign9,
+    altText: "",
+  },
 ];

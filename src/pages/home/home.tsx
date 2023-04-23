@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <Page>
       <StyledTitleBox>
-        <StyledHand src={Hand} />
+        <StyledHand role="presentation" alt="" src={Hand} />
         <TextComponent
           type={TextType.SUBTITLE}
           text="hello! my name is Amanda Dupell and i am"
@@ -29,7 +29,7 @@ const HomePage = () => {
           type={TextType.SUBTITLE}
           text="check out some of my work below!"
         />
-        <StyledArrow src={Arrow} />
+        <StyledArrow role="presentation" alt="" src={Arrow} />
       </StyledTitleBox>
       <Container>
         <TextComponent type={TextType.SUBHEADER} text="projects" />

@@ -47,6 +47,15 @@ import SignUpFlowImage from "../../images/letterboxd/signupflow.png";
 import HomepageFlowImage from "../../images/letterboxd/homepageflow.png";
 import SignUpFinalImage from "../../images/letterboxd/signupfinal.png";
 import HomeFinalImage from "../../images/letterboxd/homefinal.png";
+import {
+  letterboxdCoverImageDesc,
+  exisitingBrandImage,
+  userFeedbackImageDesc,
+  signUpFinalImageDesc,
+  homepageFlowImageDesc,
+  signUpFlowImageDesc,
+  homeFinalImageDesc,
+} from "../../images/letterboxd/imagedescriptions";
 
 const LetterboxdPage = () => {
   return (
@@ -64,7 +73,7 @@ const LetterboxdPage = () => {
           <Paragraph title={item.title} text={item.text} />
         ))}
       </SectionOne>
-      <CoverImage src={LetteboxdCoverImage} />
+      <CoverImage alt={letterboxdCoverImageDesc} src={LetteboxdCoverImage} />
       <TextComponent
         type={TextType.SUBHEADER}
         text="01 existing brand and research"
@@ -73,7 +82,7 @@ const LetterboxdPage = () => {
         {sectionTwo.map((item) => (
           <Paragraph text={item.text} />
         ))}
-        <HalfImage src={ExisitingBrandImage} />
+        <HalfImage alt={exisitingBrandImage} src={ExisitingBrandImage} />
       </SectionTwo>
       <SectionThree>
         {sectionThree.map((item) => (
@@ -81,7 +90,7 @@ const LetterboxdPage = () => {
         ))}
       </SectionThree>
       <SectionFour>
-        <HalfImage src={UserFeedbackImage} />
+        <HalfImage alt={userFeedbackImageDesc} src={UserFeedbackImage} />
         {sectionFour.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
@@ -107,9 +116,9 @@ const LetterboxdPage = () => {
       </SectionSeven>
       <ImageContainer>
         <TextComponent bold type={TextType.SUBTITLE} text="sign up" />
-        <SignUpFlow src={SignUpFlowImage} />
+        <SignUpFlow alt={signUpFlowImageDesc} src={SignUpFlowImage} />
         <TextComponent bold type={TextType.SUBTITLE} text="homepage" />
-        <HomepageFlow src={HomepageFlowImage} />
+        <HomepageFlow alt={homepageFlowImageDesc} src={HomepageFlowImage} />
       </ImageContainer>
       <TextComponent type={TextType.SUBHEADER} text="03 brainstorm" />
       <SectionEight>
@@ -119,12 +128,12 @@ const LetterboxdPage = () => {
       </SectionEight>
       <SectionNine>
         {sectionNine.map((item) => (
-          <Sketch src={item} />
+          <Sketch alt={item.altText} src={item.src} />
         ))}
       </SectionNine>
       <SectionTen>
         {sectionTen.map((item) => (
-          <Sketch src={item} />
+          <Sketch alt={item.altText} src={item.src} />
         ))}
       </SectionTen>
       <TextComponent type={TextType.SUBHEADER} text="04 final designs" />
@@ -132,7 +141,7 @@ const LetterboxdPage = () => {
         {sectionEleven.map((item) => (
           <Paragraph title={item.title} text={item.text} />
         ))}
-        <SignUpFinal src={SignUpFinalImage} />
+        <SignUpFinal alt={signUpFinalImageDesc} src={SignUpFinalImage} />
       </SectionEleven>
       <SectionTwelve>
         {sectionTwelve.map((item) => (
@@ -145,7 +154,7 @@ const LetterboxdPage = () => {
             <Paragraph title={item.title} text={item.text} />
           ))}
         </TextContainer>
-        <HalfImage src={HomeFinalImage} />
+        <HalfImage alt={homeFinalImageDesc} src={HomeFinalImage} />
       </SectionThirteen>
     </Page>
   );
