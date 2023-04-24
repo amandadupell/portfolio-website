@@ -1,5 +1,10 @@
 import React from "react";
-import { Page, Project, TextComponent } from "../../components";
+import {
+  AnimationSection,
+  Page,
+  Project,
+  TextComponent,
+} from "../../components";
 import { TextType } from "../../types/text";
 import {
   Container,
@@ -35,16 +40,18 @@ const HomePage = () => {
         <TextComponent type={TextType.SUBHEADER} text="projects" />
         <ProjectContainer>
           {projectData.map((item) => (
-            <Project
-              title={item.title}
-              description={item.description}
-              skills={item.skills}
-              src={item.src}
-              color={item.color}
-              to={item.to}
-              target={item.target}
-              alt={item.alt}
-            />
+            <AnimationSection home>
+              <Project
+                title={item.title}
+                description={item.description}
+                skills={item.skills}
+                src={item.src}
+                color={item.color}
+                to={item.to}
+                target={item.target}
+                alt={item.alt}
+              />
+            </AnimationSection>
           ))}
         </ProjectContainer>
       </Container>
