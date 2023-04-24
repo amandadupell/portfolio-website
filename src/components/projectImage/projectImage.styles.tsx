@@ -8,6 +8,11 @@ export const Container = styled.div`
   position: relative;
   top: 0;
   left: 0;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 1000px) {
     padding-bottom: 20px;
@@ -16,10 +21,8 @@ export const Container = styled.div`
 
 export const StyledCircle = styled.div<StyledProjectImageProps>`
   position: relative;
-  top: 0;
-  left: 0;
-  height: 250px;
-  width: 250px;
+  height: 225px;
+  width: 225px;
   border-radius: 50%;
   background-color: ${({ color }) => color};
 
