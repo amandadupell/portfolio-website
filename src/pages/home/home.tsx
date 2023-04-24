@@ -43,6 +43,7 @@ const HomePage = () => {
               color={item.color}
               to={item.to}
               target={item.target}
+              alt={item.alt}
             />
           ))}
         </ProjectContainer>
