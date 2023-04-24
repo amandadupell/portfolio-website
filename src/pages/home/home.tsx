@@ -37,7 +37,9 @@ const HomePage = () => {
         <StyledArrow role="presentation" alt="" src={Arrow} />
       </StyledTitleBox>
       <Container>
-        <TextComponent type={TextType.SUBHEADER} text="projects" />
+        <AnimationSection>
+          <TextComponent type={TextType.SUBHEADER} text="projects" />
+        </AnimationSection>
         <ProjectContainer>
           {projectData.map((item) => (
             <AnimationSection home>
