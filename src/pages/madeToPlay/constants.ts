@@ -105,13 +105,45 @@ export const sectionTen = [
 ];
 
 export const finalDesigns = [
-  FinalDesign1,
-  FinalDesign2,
-  FinalDesign3,
-  FinalDesign4,
-  FinalDesign5,
-  FinalDesign6,
-  FinalDesign7,
-  FinalDesign8,
-  FinalDesign9,
+  {
+    src: FinalDesign1,
+    altText: "An 8 by 10 book spread showing the book table of contents.",
+  },
+  {
+    src: FinalDesign2,
+    altText: "A book spread with an introduction.",
+  },
+  {
+    src: FinalDesign3,
+    altText: "A book spread with a glossary of terms used in the book.",
+  },
+  {
+    src: FinalDesign4,
+    altText: "A book spread with a glossary of terms used in the book.",
+  },
+  {
+    src: FinalDesign5,
+    altText:
+      "A book spread with a comprehensive list of the materials used in the book.",
+  },
+  {
+    src: FinalDesign6,
+    altText:
+      "A book spread with the Made To Play shape pattern and a section header on it.",
+  },
+  {
+    src: FinalDesign7,
+    altText:
+      "A book spread with the milestones for that age range defined for the guardian.",
+  },
+  {
+    src: FinalDesign8,
+    altText:
+      "A book spread with the toy description, materials, process, and illustrations for aiding in the guardian's creation of the toy.",
+  },
+  {
+    src: FinalDesign9,
+    altText:
+      "A book spread with the correlated guided play and skills that a guardian will be observing during play time with their child.",
+  },
 ];

@@ -3,12 +3,13 @@ import { TextComponent } from "..";
 import { TextType } from "../../types/text";
 import { StyledBox, StyledImage, StyledLink, StyledNav } from "./header.styles";
 import Image from "../../images/global/portfoliologo.png";
+import { portfolioLogoImageDesc } from "../../images/global/imagedescriptions";
 
 const Header = () => {
   return (
     <StyledNav>
       <StyledLink to="/">
-        <StyledImage src={Image} />
+        <StyledImage alt={portfolioLogoImageDesc} src={Image} />
       </StyledLink>
       <StyledBox>
         <StyledLink to="/">

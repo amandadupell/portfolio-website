@@ -93,9 +93,32 @@ export const sectionEight = [
   },
 ];
 
-export const sectionNine = [SignUpSketch1, SignUpSketch2, SignUpSketch3];
+export const sectionNine = [
+  {
+    src: SignUpSketch1,
+    altText:
+      "A sketch of the first screen of the new sign up flow which prompts users to fill out their email and choose a username and password.",
+  },
+  {
+    src: SignUpSketch2,
+    altText:
+      "A sketch of the second screen of the new sign up flow which prompts users to select genres that they're interested in.",
+  },
+  {
+    src: SignUpSketch3,
+    altText:
+      "A sketch of the third screen of the new sign up flow which displays a list of users related to their genres of interest to follow. The user can choose which users to follow.",
+  },
+];
 
-export const sectionTen = [HomeSketchImage, HomeLofiImage];
+export const sectionTen = [
+  {
+    src: HomeSketchImage,
+    altText:
+      "A sketch of the new home page flow which includes a featured movie carousel, movie recommendations, movie lists, popular user reviews, and suggested users to follow.",
+  },
+  { src: HomeLofiImage, altText: "A low-fidelity mockup of the home screen." },
+];
 
 export const sectionEleven = [
   {
