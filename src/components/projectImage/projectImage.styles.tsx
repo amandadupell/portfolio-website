@@ -15,6 +15,8 @@ export const Container = styled.div`
   align-items: center;
 
   @media screen and (max-width: 1000px) {
+    height: 150px;
+    width: 150px;
     padding-bottom: 20px;
   }
 `;
@@ -27,8 +29,8 @@ export const StyledCircle = styled.div<StyledProjectImageProps>`
   background-color: ${({ color }) => color};
 
   @media screen and (max-width: 1000px) {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
   }
 `;
 

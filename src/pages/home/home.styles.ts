@@ -71,12 +71,10 @@ export const StyledHand = styled.img`
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 800px) {
-    animation: 2s ease-in-out spin 0s;
-    -webkit-animation: 2s ease-in-out spin 0s;
-    -moz-animation: 2s ease-in-out spin 0s;
-    -o-animation: 2s ease-in-out spin 0s;
-  }
+  animation: 2s ease-in-out spin 0s;
+  -webkit-animation: 2s ease-in-out spin 0s;
+  -moz-animation: 2s ease-in-out spin 0s;
+  -o-animation: 2s ease-in-out spin 0s;
 
   &:hover {
     animation: 2s ease-in-out spin 2s;
