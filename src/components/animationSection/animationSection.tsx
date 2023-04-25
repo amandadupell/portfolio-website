@@ -6,18 +6,13 @@ interface AnimationSectionProps {
   home?: boolean;
 }
 
-const homeInitial = { opacity: 0, scale: 0 };
-const initial = { opacity: 0 };
-const homeWhileInView = { opacity: 1, scale: 1 };
-const whileInView = { opacity: 1 };
-
 const AnimationSection = ({ children, home }: AnimationSectionProps) => {
   return (
     <motion.div
-      initial={home ? homeInitial : initial}
-      whileInView={home ? homeWhileInView : whileInView}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: home ? 1 : 2 }}
+      transition={{ duration: 2 }}
     >
       {children}
     </motion.div>
