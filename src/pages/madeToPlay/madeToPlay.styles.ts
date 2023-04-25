@@ -20,7 +20,7 @@ export const FinalDesignSection = styled.div`
   margin-bottom: 100px;
 
   @media screen and (max-width: 1000px) {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -29,6 +29,11 @@ export const Illustrations = styled(Gigamap)``;
 export const FinalDesign = styled(Gigamap)`
   margin: 50px 0;
   border: 1px solid black;
+
+  @media screen and (max-width: 800px) {
+    margin: 25px 0;
+    border: 0.5px solid black;
+  }
 `;
 
 export const ImageContainer = styled.div`
