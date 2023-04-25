@@ -42,7 +42,7 @@ const HomePage = () => {
         </AnimationSection>
         <ProjectContainer>
           {projectData.map((item) => (
-            <AnimationSection home>
+            <AnimationSection>
               <Project
                 title={item.title}
                 description={item.description}

@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 
 interface AnimationSectionProps {
   children: any;
-  home?: boolean;
 }
 
-const AnimationSection = ({ children, home }: AnimationSectionProps) => {
+const AnimationSection = ({ children }: AnimationSectionProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
