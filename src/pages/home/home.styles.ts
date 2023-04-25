@@ -35,22 +35,33 @@ export const StyledArrow = styled.img`
 export const StyledHand = styled.img`
   display: flex;
   margin-bottom: 25px;
-  height: 300px;
-  width: 300px;
-  animation: 1.5s ease-out 0s slideInRight, spin 2s;
-
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100vw);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+  height: 250px;
+  width: 250px;
 
   @keyframes spin {
     0% {
-      transform: rotate(180deg);
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
   }
 
@@ -58,5 +69,14 @@ export const StyledHand = styled.img`
     height: 100px;
     width: 100px;
     margin-bottom: 10px;
+  }
+
+  animation: 2s ease-in-out spin 0s;
+  -webkit-animation: 2s ease-in-out spin 0s;
+  -moz-animation: 2s ease-in-out spin 0s;
+  -o-animation: 2s ease-in-out spin 0s;
+
+  &:hover {
+    animation: 2s ease-in-out spin 2s;
   }
 `;

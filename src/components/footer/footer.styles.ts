@@ -71,5 +71,9 @@ export const Scissors = styled.img`
       left: 100%;
     }
   }
+
   animation: animate 30s linear infinite;
+  -webkit-animation: animate 30s linear infinite;
+  -moz-animation: animate 30s linear infinite;
+  -o-animation: animate 30s linear infinite;
 `;

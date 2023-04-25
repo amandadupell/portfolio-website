@@ -15,13 +15,13 @@ export const StyledText = styled.div<StyledTextProps>`
         switch (type) {
           case TextType.HEADER:
           case TextType.SUBHEADER:
-            return "700 2em";
+            return "700 1.75em";
           case TextType.TITLE:
-            return "700 1.5em";
+            return "700 1.25em";
           case TextType.SUBTITLE:
-            return "1.25em";
-          case TextType.PARAGRAPH:
             return "1em";
+          case TextType.PARAGRAPH:
+            return "0.8em";
           default:
             return;
         }
@@ -35,4 +35,9 @@ export const StyledText = styled.div<StyledTextProps>`
       : ""}
   ${({ nav }) => (nav ? `&:hover { color: ${$orange} }` : "")}
   white-space: pre-line;
+
+  @media screen and (max-width: 800px) {
+    ${({ type }) =>
+      type === TextType.HEADER ? "font: 700 1.25em Inter, sans-serif;" : ""}
+  }
 `;

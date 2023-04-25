@@ -1,4 +1,9 @@
 import { $madeToPlay, $letterboxd, $oldPortfolio } from "../../assets/colors";
+import {
+  coverMockupImageDesc,
+  homeMockupImageDesc,
+  portfolioMockupImageDesc,
+} from "../../images/home/imagedescriptions";
 import MadeToPlayImage from "../../images/home/covermockup.png";
 import LetterboxdImage from "../../images/home/home1mock.png";
 import PorfolioImage from "../../images/home/portfoliomockup.png";
@@ -12,6 +17,7 @@ export const projectData = [
     src: MadeToPlayImage,
     color: $madeToPlay,
     to: "/made-to-play",
+    alt: coverMockupImageDesc,
   },
   {
     title: "Letterboxd",
@@ -21,6 +27,7 @@ export const projectData = [
     src: LetterboxdImage,
     color: $letterboxd,
     to: "/letterboxd",
+    alt: homeMockupImageDesc,
   },
   {
     title: "Personal Portfolio",
@@ -31,5 +38,6 @@ export const projectData = [
     color: $oldPortfolio,
     to: "https://amandadupell.surge.sh/",
     target: "_blank",
+    alt: portfolioMockupImageDesc,
   },
 ];

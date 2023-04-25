@@ -3,12 +3,13 @@ import { Page, Paragraph } from "../../components";
 import { Container, StyledProfile } from "./about.styles";
 import ProfileImage from "../../images/about/profile.png";
 import { info } from "./constants";
+import { profileImageDesc } from "../../images/about/imagedescriptions";
 
 const AboutPage = () => {
   return (
     <Page>
       <Container>
-        <StyledProfile src={ProfileImage} />
+        <StyledProfile alt={profileImageDesc} src={ProfileImage} />
         <Paragraph
           size="large"
           header="A little bit about me"

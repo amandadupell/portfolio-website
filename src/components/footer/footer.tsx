@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-      <Scissors alt="Scissors Icon" src={ScissorsImage} />
+      <Scissors role="presentation" alt="" src={ScissorsImage} />
       <StyledFooter>
         <StyledBox>
           <StyledA onClick={scrollToTop}>

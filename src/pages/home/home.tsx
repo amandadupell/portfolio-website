@@ -1,5 +1,10 @@
 import React from "react";
-import { Page, Project, TextComponent } from "../../components";
+import {
+  AnimationSection,
+  Page,
+  Project,
+  TextComponent,
+} from "../../components";
 import { TextType } from "../../types/text";
 import {
   Container,
@@ -16,7 +21,7 @@ const HomePage = () => {
   return (
     <Page>
       <StyledTitleBox>
-        <StyledHand src={Hand} />
+        <StyledHand role="presentation" alt="" src={Hand} />
         <TextComponent
           type={TextType.SUBTITLE}
           text="hello! my name is Amanda Dupell and i am"
@@ -29,21 +34,26 @@ const HomePage = () => {
           type={TextType.SUBTITLE}
           text="check out some of my work below!"
         />
-        <StyledArrow src={Arrow} />
+        <StyledArrow role="presentation" alt="" src={Arrow} />
       </StyledTitleBox>
       <Container>
-        <TextComponent type={TextType.SUBHEADER} text="projects" />
+        <AnimationSection>
+          <TextComponent type={TextType.SUBHEADER} text="projects" />
+        </AnimationSection>
         <ProjectContainer>
           {projectData.map((item) => (
-            <Project
-              title={item.title}
-              description={item.description}
-              skills={item.skills}
-              src={item.src}
-              color={item.color}
-              to={item.to}
-              target={item.target}
-            />
+            <AnimationSection>
+              <Project
+                title={item.title}
+                description={item.description}
+                skills={item.skills}
+                src={item.src}
+                color={item.color}
+                to={item.to}
+                target={item.target}
+                alt={item.alt}
+              />
+            </AnimationSection>
           ))}
         </ProjectContainer>
       </Container>

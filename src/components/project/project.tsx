@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ProjectImage, TextComponent } from "../";
+import { ProjectImage } from "../";
 import { TextType } from "../../types/text";
-import { Container, TextContainer } from "./project.styles";
+import { Container, StyledText, TextContainer } from "./project.styles";
 
 interface ProjectProps {
   className?: any;
@@ -10,6 +10,7 @@ interface ProjectProps {
   description: string;
   skills: string;
   src: string;
+  alt: string;
   color: string;
   to: string;
   target?: string;
@@ -21,6 +22,7 @@ const Project = ({
   description,
   skills,
   src,
+  alt,
   color,
   to,
   target,
@@ -28,11 +30,11 @@ const Project = ({
   return (
     <Link target={target} style={{ textDecoration: "none" }} to={to}>
       <Container className={className}>
-        <ProjectImage src={src} color={color} />
+        <ProjectImage alt={alt} src={src} color={color} />
         <TextContainer>
-          <TextComponent type={TextType.TITLE} text={title} />
-          <TextComponent type={TextType.PARAGRAPH} text={description} />
-          <TextComponent bold type={TextType.PARAGRAPH} text={skills} />
+          <StyledText type={TextType.TITLE} text={title} />
+          <StyledText type={TextType.PARAGRAPH} text={description} />
+          <StyledText bold type={TextType.PARAGRAPH} text={skills} />
         </TextContainer>
       </Container>
     </Link>

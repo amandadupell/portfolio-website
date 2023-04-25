@@ -6,3 +6,4 @@ export { default as Project } from "./project";
 export { default as ProjectImage } from "./projectImage";
 export { default as CoverImage } from "./coverImage";
 export { default as Footer } from "./footer";
+export { default as AnimationSection } from "./animationSection";
