@@ -3,7 +3,7 @@ import { TextComponent } from "..";
 
 export const Container = styled.div`
   display: flex;
-  margin-top: 100px;
+  margin: 50px 0;
 
   transition: transform 0.2s ease-in-out;
   &: hover {
@@ -11,8 +11,8 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
+    margin: 25px 0;
     flex-direction: column;
-    margin-top: 50px;
     align-items: center;
   }
 `;
