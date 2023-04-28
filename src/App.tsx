@@ -3,8 +3,6 @@ import { Footer, Header } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AboutPage, HomePage, LetterboxdPage, MadeToPlayPage } from "./pages";
 
-const theme = "";
-
 function App() {
   return (
     <BrowserRouter>
