@@ -14,6 +14,7 @@ export const Section = styled.div`
 `;
 
 export const FullImage = styled.img`
+  mix-blend-mode: darken;
   display: flex;
   width: 100%;
   height: auto;
@@ -22,6 +23,7 @@ export const FullImage = styled.img`
 export const HalfImage = styled.img`
   width: 50%;
   height: auto;
+  mix-blend-mode: darken;
 
   @media screen and (max-width: 1000px) {
     width: 100%;
