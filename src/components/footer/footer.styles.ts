@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { TextComponent } from "..";
+import { $white } from "../../assets/colors";
 
 export const StyledFooter = styled.footer`
   display: flex;
   border-top: 3px dotted black;
   justify-content: space-around;
+  background: ${$white};
 
   @media screen and (max-width: 800px) {
     padding: 50px 0;
@@ -76,4 +78,11 @@ export const Scissors = styled.img`
   -webkit-animation: animate 30s linear infinite;
   -moz-animation: animate 30s linear infinite;
   -o-animation: animate 30s linear infinite;
+`;
+
+export const PartyIcon = styled.img`
+  display: flex;
+  height: 5em;
+  width: 5em;
+  padding-top: 20px;
 `;

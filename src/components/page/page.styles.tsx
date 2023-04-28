@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { $white } from "../../assets/colors";
 
 export const StyledPage = styled.div`
+  color: ${$white};
   padding: 50px 50px 100px 50px;
   animation: fadeInAnimation ease-in-out 1s;
   -webkit-animation: fadeInAnimation ease-in-out 1s;
