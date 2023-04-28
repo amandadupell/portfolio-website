@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer, Header } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AboutPage, HomePage, LetterboxdPage, MadeToPlayPage } from "./pages";
+import { $white } from "./assets/colors";
 
 function App() {
+  useEffect(() => {
+    document.body.style.backgroundColor = $white;
+  }, []);
   return (
     <BrowserRouter>
       <Header />
