@@ -77,3 +77,10 @@ export const Scissors = styled.img`
   -moz-animation: animate 30s linear infinite;
   -o-animation: animate 30s linear infinite;
 `;
+
+export const PartyIcon = styled.img`
+  display: flex;
+  height: 5em;
+  width: 5em;
+  padding-top: 20px;
+`;

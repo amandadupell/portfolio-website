@@ -9,10 +9,12 @@ import {
   StyledA,
   StyledText,
   ProjectContainer,
+  PartyIcon,
 } from "./footer.styles";
 import ScissorsImage from "../../images/global/scissors.svg";
+import PartyImage from "../../images/global/animatedParty.svg";
 
-const Header = () => {
+const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,6 +22,23 @@ const Header = () => {
     });
   };
   const email = () => (window.location.href = "mailto:anddupell@gmail.com");
+
+  const handleAnimation = () => {
+    document.body.animate(
+      {
+        background: [
+          "#c6fefe",
+          "#c9ffc9",
+          "#ffffce",
+          "#ffcfcf",
+          "#cacafc",
+          "#c6fefe",
+        ],
+        easing: "linear",
+      },
+      { duration: 3000, iterations: 2 }
+    );
+  };
 
   return (
     <>
@@ -42,13 +61,16 @@ const Header = () => {
           <StyledA onClick={email}>
             <StyledText type={TextType.TITLE} text="email" />
           </StyledA>
+          <StyledA onClick={handleAnimation}>
+            <PartyIcon src={PartyImage} />
+          </StyledA>
         </StyledBox>
         <ProjectContainer>
           <StyledText type={TextType.TITLE} text="projects" />
-          <StyledLink to="/made-to-play/*">
+          <StyledLink to="/made-to-play">
             <StyledText type={TextType.PARAGRAPH} text="made to play" />
           </StyledLink>
-          <StyledLink to="/letterboxd/*">
+          <StyledLink to="/letterboxd">
             <StyledText type={TextType.PARAGRAPH} text="letterboxd" />
           </StyledLink>
           <StyledLink target="_blank" to="https://amandadupell.surge.sh/">
@@ -60,4 +82,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;
