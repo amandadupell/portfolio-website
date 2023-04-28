@@ -61,7 +61,7 @@ const Footer = () => {
           <StyledA onClick={email}>
             <StyledText type={TextType.TITLE} text="email" />
           </StyledA>
-          <StyledA onClick={handleAnimation}>
+          <StyledA role="presentation" alt="" onClick={handleAnimation}>
             <PartyIcon src={PartyImage} />
           </StyledA>
         </StyledBox>
