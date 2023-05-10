@@ -175,7 +175,12 @@ const MadeToPlayPage = () => {
         <TextComponent type={TextType.SUBHEADER} text="05 impact" />
         <SectionTen>
           {sectionTen.map((item) => (
-            <Paragraph title={item.title} text={item.text} />
+            <Paragraph
+              title={item.title}
+              text={item.text}
+              link={item.link}
+              linkText={item.linkText}
+            />
           ))}
         </SectionTen>
       </AnimationSection>

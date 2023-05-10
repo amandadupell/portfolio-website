@@ -4,7 +4,7 @@ import { StyledText } from "./textComponent.styles";
 
 interface TextComponentProps {
   className?: any;
-  text: string;
+  text?: string;
   type?: TextType;
   bold?: boolean;
   nav?: boolean;

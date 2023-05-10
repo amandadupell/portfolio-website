@@ -9,6 +9,8 @@ interface ParagraphProps {
   size?: string;
   text: string;
   title?: string;
+  link?: string;
+  linkText?: string;
 }
 
 const Paragraph = ({
@@ -17,12 +19,19 @@ const Paragraph = ({
   size,
   text,
   title,
+  link,
+  linkText,
 }: ParagraphProps) => {
   return (
     <Container size={size} className={className}>
       {header && <StyledTitle type={TextType.SUBHEADER} text={header} />}
       {title && <StyledTitle bold type={TextType.SUBTITLE} text={title} />}
-      <TextComponent type={TextType.PARAGRAPH} text={text} />
+      <StyledTitle type={TextType.PARAGRAPH} text={text} />
+      {link && (
+        <a aria-label={linkText} href={link} target="_blank" rel="noreferrer">
+          <TextComponent type={TextType.PARAGRAPH} text={linkText} />
+        </a>
+      )}
     </Container>
   );
 };
