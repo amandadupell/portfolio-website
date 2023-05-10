@@ -97,6 +97,14 @@ export const sectionTen = [
     As of March 2023, we are continuing  to work with the city of Boston and the mayor to print and distribute our book citywide to families with young children. From this, we will collect more user feedback and further iterate on the book.`,
   },
   {
+    title: "fast company",
+    text: `As of May 2023, our project was honored as a nominee for the World Changing Idea for Education by Fast Company Magazine.
+
+    As stated by the magazine, this sector focuses on “companies, organizations, or initiatives that help inspire better and more equitable learning”.`,
+    link: "https://www.fastcompany.com/90870786/world-changing-ideas-students-2023",
+    linkText: "See more here",
+  },
+  {
     title: "takeaways",
     text: `From the start of the fall semester semester (Fall 2021) to spring (Spring 2022), I learned a lot about the research and design process that goes into a large-scale project like this one. It was amazing to meet and work with the East Boston Social Center, as I feel like our design decisions are driven by a community that benefit from the product we made instead of a “personal project”. 
 
